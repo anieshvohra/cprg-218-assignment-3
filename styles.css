@@ -59,4 +59,18 @@
     font-size: 4rem;
     color: var(--white);
   }
-  
+  /* Grid for Galleries */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  .gallery-grid img,
+  .gallery-grid video,
+  .lightbox-trigger,
+  .video-trigger {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 0.25rem;
+  }
