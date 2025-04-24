@@ -12,4 +12,51 @@
     --font-btn: 'Tac One', cursive;
   }
   
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: var(--font-body);
+    background-color: var(--snow);
+    color: #000;
+    line-height: 1.6;
+  }
+  a { text-decoration: none; color: inherit; }
+  
+  /* Header & Navigation */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neon-blue);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo { font-family: var(--font-heading); font-size: 2rem; color: var(--white); }
+  .site-nav a { margin: 0 1rem; font-family: var(--font-nav); font-weight: bold; color: var(--white); }
+  .site-nav .active { text-decoration: underline; }
+  .nav-toggle { display: none; font-size: 2rem; background: none; border: none; color: var(--white); cursor: pointer; }
+  
+  /* Section Spacing */
+  .section { padding: 4rem 2rem; }
+  
+  /* Home Banner */
+  .home-banner { position: relative; text-align: center; }
+  .banner-img { width: 100%; height: auto; }
+  .home-banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--white);
+  }
   
