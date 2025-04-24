@@ -1,0 +1,15 @@
+/* Root Variables for Colors & Fonts */
+:root {
+    --neon-blue: #2323FF;
+    --snow: #FFFAFA;
+    --mint-blue: #98FBCB;
+    --mimosa: #F2B949;
+    --white: #FFFFFF;
+  
+    --font-heading: 'Abel', sans-serif;
+    --font-body: 'Caladea', serif;
+    --font-nav: 'Times New Roman', serif;
+    --font-btn: 'Tac One', cursive;
+  }
+  
+  
