@@ -9,9 +9,39 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header"><div class="logo">Shangri-La</div></header>
+  <header class="site-header">
+    <div class="logo">Shangri-La</div>
+  </header>
 
+  <main>
+    <section class="section media">
+      <h1>Media Gallery</h1>
+      <div class="gallery-grid">
 
-  <footer class="site-footer"> <p>&copy; 2025 Shangri-La Resort. All Rights Reserved.</p></footer>
+        <!-- Video 1 -->
+        <video class="video-trigger media-item" src="assets/photos/swimming pool.mp4" poster="assets/photos/resort-2495217_1920.jpg" controls></video>
+
+        <!-- Video 2 -->
+        <video class="video-trigger media-item" src="assets/photos/spa.mp4" poster="assets/photos/pexels-john-tekeridis-21837-3212164.jpg" controls></video>
+
+        <!-- Image 1 -->
+        <img src="assets/photos/architecture-blue-water-buildings-261102.jpg" alt="Evening Spa View" class="lightbox-trigger media-item" data-src="assets/photos/architecture-blue-water-buildings-261102.jpg">
+
+        <!-- Image 2 -->
+        <img src="assets/photos/pink-sand.jpg" alt="Ocean View from Balcony" class="lightbox-trigger media-item" data-src="assets/photos/pink-sand.jpg">
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="" alt="Enlarged view">
+    <span id="lightbox-close">&times;</span>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Shangri-La Resort. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
