@@ -239,7 +239,10 @@ gap: 5rem;
    
     margin: 2rem;
 }
-
+.contact-form{ display: flex;
+    flex-direction: column;
+    
+}
 /* Responsive Mobile */
 @media (max-width: 768px) {
     .site-nav { display: none; flex-direction: column; background-color: var(--neon-blue); position: absolute; top: 100%; right: 0; width: 200px; }
@@ -256,3 +259,5 @@ gap: 5rem;
   @media (max-width: 870px) {
     .site-nav{ font-size: 8px;}
   }
+
+ 
