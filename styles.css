@@ -10,25 +10,28 @@
     --font-body: 'Caladea', serif;
     --font-nav: 'Times New Roman', serif;
     --font-btn: 'Tac One', cursive;
-  }
-  
-  /* Reset */
-  * {
+}
+
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Base Styles */
-  body {
+}
+
+/* Base Styles */
+body {
     font-family: var(--font-body);
     background-color: var(--snow);
     color: #000;
     line-height: 1.6;
-  }
-  a { text-decoration: none; color: inherit; }
-  
-  /* Header & Navigation */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header & Navigation */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -38,19 +41,45 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  .logo { font-family: var(--font-heading); font-size: 2rem; color: var(--white); }
-  .site-nav a { margin: 0 1rem; font-family: var(--font-nav); font-weight: bold; color: var(--white); }
-  .site-nav .active { text-decoration: underline; }
-  .nav-toggle { display: none; font-size: 2rem; background: none; border: none; color: var(--white); cursor: pointer; }
-  
-  /* Section Spacing */
-  .section { padding: 4rem 2rem; }
-  
-  /* Home Banner */
-  .home-banner { position: relative; text-align: center; }
-  .banner-img { width: 100%; height: auto; }
-  .home-banner h1 {
+}
+.logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--white);
+}
+.site-nav a {
+    margin: 0 1rem;
+    font-family: var(--font-nav);
+    font-weight: bold;
+    color: var(--white);
+}
+.site-nav .active {
+    text-decoration: underline;
+}
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* Section Spacing */
+.section {
+    padding: 4rem 2rem;
+}
+
+/* Home Banner */
+.home-banner {
+    position: relative;
+    text-align: center;
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+.home-banner h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,57 +87,74 @@
     font-family: var(--font-heading);
     font-size: 4rem;
     color: var(--white);
-  }
-  /* Grid for Galleries */
+}
+
+/* Grid for Galleries */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-  }
-  .gallery-grid img,
-  .gallery-grid video,
-  .lightbox-trigger,
-  .video-trigger {
+}
+.gallery-grid img,
+.gallery-grid video,
+.lightbox-trigger,
+.video-trigger {
     width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 0.25rem;
-  }
+}
 
-  /* Lightbox Overlay */
+/* Lightbox Overlay (NEW) */
 .lightbox-overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
-    z-index: 2000;
-  }
-  .lightbox-overlay img,
-  .lightbox-overlay video {
+    z-index: 3000;
+}
+.lightbox-overlay img {
     max-width: 90%;
-    max-height: 90%;
-  }
+    max-height: 80%;
+    border-radius: 0.5rem;
+}
+#lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
 
-  /* Button Styles */
+/* Uniform media item sizes */
+.media-item {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Button Styles */
 .btn-primary {
-  font-family: var(--font-btn);
-  font-size: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--mimosa);
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
+    font-family: var(--font-btn);
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--mimosa);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 /* Footer */
 .site-footer {
-  background: var(--neon-blue);
-  color: var(--white);
-  text-align: center;
-  padding: 1rem;
+    background: var(--neon-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
 }
