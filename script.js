@@ -1,3 +1,14 @@
+  // Wait for DOM to load
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Navigation Toggle
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+  
+  
+  
   // Image Lightbox Handler
   document.querySelectorAll('.lightbox-trigger').forEach(el => {
     el.addEventListener('click', () => {
