@@ -1,4 +1,6 @@
-  // Wait for DOM to load
+
+
+// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Navigation Toggle
     const toggle = document.getElementById('nav-toggle');
@@ -47,4 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-});
+  });
