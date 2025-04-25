@@ -215,3 +215,15 @@ a {
 gap: 5rem;
    
 }
+
+.lightbox-trigger{
+    width: 500px;
+    height: 300px;
+}
+
+    
+.amenity-block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
